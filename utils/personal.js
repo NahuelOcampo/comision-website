@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllComision = (callback) => {
-  request('http://localhost:3001/personal', (error, res, body) => {
+  request('https://comision-api.herokuapp.com/personal', (error, res, body) => {
     if (error) {
       console.log('Error', error);
       return callback(error, undefined);

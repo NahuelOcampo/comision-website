@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const port = process.env.PORT || 3000;
 
 // const bodyParser = require('body-parser');
 // var favicon = require('serve-favicon');
@@ -45,8 +46,8 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-app.listen(3000, () => {
-  console.log('Funcionando en el puerto 3000');
+app.listen(port, () => {
+  console.log(`Funcionando en http://localhost:${port}`);
 });
 
 module.exports = app;
