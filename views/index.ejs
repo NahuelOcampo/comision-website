@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <%- include('./partials/meta.ejs')%>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs')%>
+
+    <main>
+      <div class="container">
+        <h2 class="titulo">Historia de las Islas Malvinas</h2>
+        <div class="flex">
+          <div class="flex-left">
+            <video
+              controls
+              src="/Video/corto-malvinas ‐ Made with Clipchamp (1).mp4"
+            ></video>
+          </div>
+          <div class="flex-right">
+            <p class="main-p">
+              Las islas Malvinas fueron descubiertas por Américo vespucio en el
+              año 1501/1502 como integrante de una expedición portuguesa. Los
+              primero colonos llegaron en 1764 y fueron franceses. La corona de
+              España que habia descubierto América y dominaba todas las tierras,
+              mares e islas del sur por ese entonces, realizó la protesta por la
+              ocupación al rey Luis XI que reconoció internacionalmente el
+              derecho español, ordenando el retiro de sus súbditos. Cuando las
+              Provincias Unidas de Rio de la Plata se independizaron, las Islas
+              Malvinas pasaron al poder del nuevo estado como herencia directa
+              de España. Inglaterra y España firmaron acuerdos en 1667,1713 y
+              1790 donde los ingleses reconocian y se comprometian en respetar
+              la soberania en todos los dominios de España al sur del Ecuador.
+              <br />
+              <br />
+              En Enero de 1833 la corbeta inglesa Clio, al mando del capitan
+              Onslow, las invade y tomaposesión por la fuerza al nombre de su
+              majestad británica, expulsando a todos los argentinos que allí
+              vivían. La Argentina reclamó de inmediato y constantemente ante el
+              gobierno ingles, recibiendo siempre una respuesta negativa a los
+              reclamos. El 2 de Abril de 1982, Argentina recupera
+              territorialmente las Islas donde vuelve a flamear nuesta bandera.
+              Inglaterra con el auxilio de la Otán y EE.UU. usurpó a sangre y
+              fuego una vez más nuestras islas. 649 soldados argentinos dieron
+              sus vidas por salvar y defender el honor de nuetro país y son
+              fieles y eternos guardianes de nuetra perla austral esperando su
+              reintegro al seno de Nuestra Patria.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="contenedor">
+      <div class="slider-contenedor">
+        <div class="contenido-slider">
+          <img src="img/monumento/inauguracion1.jpg" alt="monumento gada 101" />
+        </div>
+        <div class="contenido-slider">
+          <img src="img/monumento/inauguracion2.jpg" alt="monumento gada 101" />
+        </div>
+        <div class="contenido-slider">
+          <img src="img/monumento/inauguracion3.jpg" alt="monumento gada 101" />
+        </div>
+        <div class="contenido-slider">
+          <img src="img/monumento/monu1.jpg" alt="monumento gada 101" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="titulo">Comisión de Homenaje</h2>
+      <% JSONBody.forEach(personal => { %>
+      <div class="card">
+        <div class="card-body">
+          <img
+            src="<%= personal.img %>"
+            class="card-img-bottom"
+            alt="<%= personal.name %>"
+          />
+          <h3 class="card-title"><%= personal.name %></h3>
+          <p class="card-text"><%= personal.cargo %></p>
+        </div>
+      </div>
+      <% }) %>
+    </section>
+
+    <section class="container">
+      <div class="units">
+        <h2 class="titulo">
+          Acciòn destacada de la batería "B" del G.A.D.A. 101
+        </h2>
+        <div class="units-cont">
+          <div class="units-ind">
+            <a href="/comision">
+              <img src="img/cañongada.jpg" alt="cañon hispano suizo" />
+              <h3>G.A.D.A. 101 Bateria "B"</h3>
+              <p>
+                El Grupo de Artillería de Defensa Aérea 101 fue una unidad del
+                Ejército Argentino con asiento en Ciudadela hasta 1990 cuando
+                pasó a Mar del Plata.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./partials/footer')%>
+
+    <script src="/javascripts/main.js"></script>
+  </body>
+</html>

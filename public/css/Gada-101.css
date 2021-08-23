@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e8ecf1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.main-nav {
+  max-width: 1200px;
+  margin: auto;
+  color: #6c737e;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #7393a7;
+  padding-bottom: 15px;
+  padding: 15px;
+  text-align: right;
+}
+
+.item {
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+}
+
+.item1 {
+  background-color: #e8ecf1;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.item2 {
+  background-color: #aab2be;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.item3 {
+  background-color: #e8ecf1;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.item4 {
+  background-color: #7393a7;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.image-p {
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  border-radius: 8px;
+}
+
+div {
+  text-align: center;
+}
+
+/*//////// Footer ////////**/
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+  text-align: center;
+}
+
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #7393a7;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p {
+  color: #ccc;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+span a {
+  font-size: 30px;
+  color: #e8ecf1;
+  text-decoration: none;
+}
+
+/*//////// responsive ///////*/
+
+@media screen and (max-width: 500px) {
+  .image-p {
+    width: 100%;
+  }
+
+  .item {
+    padding: 10px;
+  }
+
+  .contenedor-footer {
+    flex-direction: column-reverse;
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .content-foo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .content-foo h4 {
+    border: none;
+  }
+
+  .content-foo p {
+    color: #ccc;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 20px;
+  }
+
+  .titulo-final {
+    font-size: 18px;
+  }
+}
