@@ -47,7 +47,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.listen(port, () => {
-  console.log(`Funcionando en http://localhost:${port}`);
+  console.log('Funcionando en el puerto 3000');
 });
 
 module.exports = app;
